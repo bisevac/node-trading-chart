@@ -1,0 +1,26 @@
+{
+  "name": "trading-chart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "trading",
+    "chart"
+  ],
+  "author": "muratdeniz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-loader": "^4.0.2",
+    "eslint-config-airbnb-base": "^14.2.1"
+  }
+}

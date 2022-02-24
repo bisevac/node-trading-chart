@@ -35,15 +35,17 @@ const displayChart = async () => {
   const candleseries = chart.addCandlestickSeries();
   const klinedata = await getData();
   candleseries.setData(klinedata);
+
+  const ms = 5000;
+  setInterval(async () => {
+    candleseries.setData(await getData());
+  }, ms);
 };
 
 
 // init
 (() => {
   displayChart();
-
-  const ms = 5000;
-  setInterval(displayChart, ms);
 })()
 
 
